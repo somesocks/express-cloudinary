@@ -1,0 +1,45 @@
+{
+ "name": "express-cloudinary",
+ "version": "0.1.0",
+ "description": "A simple middleware for using Cloudinary via express",
+ "main": "dist/CloudinaryMiddleware",
+ "files": [
+  "dist"
+ ],
+ "repository": {
+  "type": "git",
+  "url": "git@github.com:somesocks/express-cloudinary.git"
+ },
+ "keywords": [
+  "cloudinary",
+  "express"
+ ],
+ "author": "James Larsen (somesocks@gmail.com)",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/somesocks/express-cloudinary/issues"
+ },
+ "homepage": "https://github.com/somesocks/express-cloudinary",
+ "devDependencies": {
+  "babel-eslint": "^8.2.3",
+  "eslint": "^4.19.1",
+  "eslint-config-airbnb": "^16.1.0",
+  "eslint-plugin-import": "^2.12.0",
+  "eslint-plugin-jsx-a11y": "^6.0.3",
+  "eslint-plugin-react": "^7.8.2",
+  "express": "^4.16.3",
+  "gulp": "^3.9.1",
+  "gulp-clean": "^0.4.0",
+  "gulp-help": "^1.6.1",
+  "gulp-shell": "^0.6.5",
+  "mocha": "^5.2.0",
+  "supertest": "^3.1.0"
+ },
+ "dependencies": {
+  "cloudinary": "^1.11.0",
+  "minimatch": "^3.0.4",
+  "object-inspect": "^1.6.0",
+  "urijs": "^1.19.1",
+  "vet": "^1.0.3"
+ }
+}

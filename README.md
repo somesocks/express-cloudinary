@@ -1,2 +1,2 @@
 # express-cloudinary
-A simple middleware for using cloudinary vis express
+A simple middleware for using Cloudinary via express
