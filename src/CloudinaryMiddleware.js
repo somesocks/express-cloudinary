@@ -43,7 +43,6 @@ const getRequestMatcher = (req) => req.method === 'GET';
 const noCDN = (flag) => (req) => req.query && req.query.hasOwnProperty(flag);
 
 const cloudinaryRequestBuilder = (config) => (req) => {
-
 	let url = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
 
 	console.log('cloudinaryRequestBuilder source url', url);
