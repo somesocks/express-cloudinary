@@ -45,8 +45,6 @@ const noCDN = (flag) => (req) => req.query && req.query.hasOwnProperty(flag);
 const cloudinaryRequestBuilder = (config) => (req) => {
 	let url = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
 
-	console.log('cloudinaryRequestBuilder source url', url);
-
 	url = URI(url)
 		.addQuery(config.noCDNFlag || 'nocdn')
 		.toString();
@@ -73,10 +71,8 @@ const cloudinaryRequestBuilder = (config) => (req) => {
 		params.crop = req.query.crop;
 	}
 
-	console.log('cloudinaryRequestBuilder source url 2', url);
-
 	url = Cloudinary.url(url, params);
-	console.log('cloudinaryRequestBuilder dest url', url);
+
 	return url;
 };
 

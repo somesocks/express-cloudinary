@@ -1,6 +1,6 @@
 {
 	"name": "express-cloudinary",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A simple middleware for using Cloudinary via express",
 	"main": "dist/CloudinaryMiddleware",
 	"files": ["dist"],
